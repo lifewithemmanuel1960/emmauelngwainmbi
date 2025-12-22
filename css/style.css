@@ -623,3 +623,23 @@
 .footer .copyright {
     border-top: 1px solid rgba(255, 255, 255, .1);
 }
+
+/* Fix image being cut into shapes */
+.speaker-img-full {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain !important;
+}
+
+/* Remove template overlay blocks */
+.about-img::before,
+.about-img::after {
+    display: none !important;
+}
+
+/* Ensure container does not clip image */
+.about-img {
+    overflow: visible !important;
+}
+
