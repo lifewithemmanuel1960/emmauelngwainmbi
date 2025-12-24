@@ -31,23 +31,60 @@
 
     <!-- Template CSS -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Header enhancement only */
+        .about-header {
+            background: linear-gradient(
+                180deg,
+                rgba(30,30,30,0.75),
+                rgba(20,20,20,0.25)
+            );
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .about-header .divider {
+            width: 60px;
+            height: 3px;
+            background: #6c757d;
+            margin: 1.2rem auto;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- Page Header -->
-    <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container text-center py-4">
-            <h1 class="display-4 animated slideInDown">About Emmanuel Ngwainmbi</h1>
+    <!-- Stylish About Header -->
+    <section class="about-header py-5 position-relative overflow-hidden">
+        <div class="container text-center wow fadeIn">
+
+            <span class="text-uppercase text-secondary small fw-semibold">
+                Emmanuel K. Ngwainmbi
+            </span>
+
+            <h1 class="display-5 fw-bold mt-2 mb-2">
+                About Emmanuel Ngwainmbi
+            </h1>
+
+            <div class="divider"></div>
+
+            <p class="text-muted mb-4">
+                Keynote Speaker · Author · Journalist · UNESCO Fellow
+            </p>
+
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">About</li>
+                    <li class="breadcrumb-item">
+                        <a href="index.html" class="text-decoration-none">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active text-secondary" aria-current="page">
+                        About
+                    </li>
                 </ol>
             </nav>
+
         </div>
-    </div>
-    <!-- Page Header End -->
+    </section>
 
     <!-- About Section -->
     <div class="container py-5">
@@ -101,7 +138,6 @@
 
         </div>
     </div>
-    <!-- About Section End -->
 
     <!-- Experience Highlights -->
     <div class="container-fluid bg-light py-5">
@@ -135,7 +171,6 @@
             </div>
         </div>
     </div>
-    <!-- Experience Highlights End -->
 
     <!-- Footer -->
     <div class="container-fluid footer py-5 bg-dark text-light">
