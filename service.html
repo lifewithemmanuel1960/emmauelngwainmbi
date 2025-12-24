@@ -25,17 +25,49 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Header enhancement only */
+        .services-header {
+            background: linear-gradient(
+                180deg,
+                rgba(30,30,30,0.75),
+                rgba(20,20,20,0.25)
+            );
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .services-header .divider {
+            width: 60px;
+            height: 3px;
+            background: #6c757d;
+            margin: 1.2rem auto;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- Page Header -->
-    <div class="container-fluid page-header py-5">
-        <div class="container text-center py-4">
-            <h1 class="display-4">Professional Services</h1>
-            <p class="fs-5 mt-2">Inspiring • Educating • Empowering</p>
+    <!-- Stylish Services Header -->
+    <section class="services-header py-5 position-relative overflow-hidden">
+        <div class="container text-center">
+
+            <span class="text-uppercase text-secondary small fw-semibold">
+                Emmanuel K. Ngwainmbi
+            </span>
+
+            <h1 class="display-5 fw-bold mt-2 mb-2">
+                Professional Services
+            </h1>
+
+            <div class="divider"></div>
+
+            <p class="text-muted mb-0">
+                Inspiring · Educating · Empowering
+            </p>
+
         </div>
-    </div>
+    </section>
 
     <!-- Back to Home Button -->
     <div class="container text-center my-3">
